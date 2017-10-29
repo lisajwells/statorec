@@ -21,11 +21,44 @@
 					foreach ( $coauthors as $coauthor ) {
 
 						if ( isset( $coauthor->type ) && 'guest-author' === $coauthor->type ) {
-						    // we have a guest author
-							get_template_part('template-parts/single/guest-author');
+						    // we have a guest author ?>
+
+							<!-- <?php d($coauthor); ?> -->
+
+							<?php typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
+
+							<div class="section-content typology-author">
+
+								<div class="container">
+
+
+									<div class="col-lg-2">
+										<?php echo coauthors_get_avatar( $coauthor, 100 ); ?>
+									</div>
+
+									<div class="col-lg-10">
+
+										<?php echo '<h5 class="typology-author-box-title">'.coauthors_posts_links_single( $coauthor ).'</h5>'; ?>
+
+										<div class="typology-author-desc">
+											<?php echo wpautop( $coauthor->description ); ?>
+										</div>
+
+										<div class="typology-author-links">
+											<?php echo statorec_coauthor_get_author_links( get_the_author_meta('ID') ); ?>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						<?php
 						} else {
 							// get_template_part('template-parts/single/author');
 							continue;
+							// d($coauthor);
 						}
 					}
 				}

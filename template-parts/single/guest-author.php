@@ -1,13 +1,16 @@
 <?php if( typology_get_option( 'single_author' ) ): ?>
 
+	<?php d($coauthor); ?>
+
 	<?php typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
 
 	<div class="section-content typology-author">
 
 		<div class="container">
 
+
 			<div class="col-lg-2">
-				<?php echo 'hi avatar' . get_avatar( get_the_author_meta('ID'), 100); ?>
+				<?php echo get_avatar( get_the_author_meta('ID'), 100); ?>
 			</div>
 
 			<div class="col-lg-10">
