@@ -24,7 +24,8 @@
 						    // we have a guest author
 							get_template_part('template-parts/single/guest-author');
 						} else {
-							get_template_part('template-parts/single/author');
+							// get_template_part('template-parts/single/author');
+							continue;
 						}
 					}
 				}
