@@ -7,7 +7,7 @@
 		<div class="container">
 
 			<div class="col-lg-2">
-				<?php echo get_avatar( get_the_author_meta('ID'), 100); ?>
+				<?php echo 'hi avatar' . get_avatar( get_the_author_meta('ID'), 100); ?>
 			</div>
 
 			<div class="col-lg-10">
