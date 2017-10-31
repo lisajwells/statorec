@@ -33,6 +33,7 @@
 
 								<div class="container">
 
+									<!-- // only display the gravatar if there is one -->
 									<?php if (!is_null( $guest_author_thumbnail )) {
 										echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
 									} ?>
@@ -45,7 +46,7 @@
 											<?php echo wpautop( $coauthor->description ); ?>
 										</div>
 
-										<!-- // need to get coauthor portion of path -->
+										<!-- // the red button -->
 										<div class="typology-author-links">
 											<?php $nice = $coauthor->user_nicename; ?>
 											<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>'; ?>
@@ -60,8 +61,8 @@
 						<?php
 						} else {
 							// get_template_part('template-parts/single/author');
+							// continue because we don't ever want to see the wp user as author
 							continue;
-							// d($coauthor);
 						}
 					}
 				}
