@@ -1,6 +1,6 @@
 <?php if( typology_get_option( 'single_author' ) ): ?>
 
-	<?php d($coauthor); ?>
+	<!-- <?php d($coauthor); ?> -->
 
 	<?php typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
 

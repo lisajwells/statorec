@@ -45,7 +45,9 @@
 										</div>
 
 										<div class="typology-author-links">
-											<?php echo statorec_coauthor_get_author_links( get_the_author_meta('ID') ); ?>
+											<?php echo statorec_get_author_links( get_the_coauthor_meta('ID') );
+												d(get_the_coauthor_meta('ID'));
+											?>
 										</div>
 
 									</div>
