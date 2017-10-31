@@ -31,6 +31,10 @@ if (!function_exists('statorec_get_coauthor_links')):
 
             // get author post url should be get coauthor posts
             $output .= '<a class="typology-button-social hover-on" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID', $author_id))) . '">' . __typology('view_all') . '</a>';
+            // d(esc_url(get_author_posts_url(get_the_author_meta('ID', $author_id))));
+            // d($author_id);
+            // d($coauthor->slug);
+            // d(__typology('view_all'));
         }
 
 
