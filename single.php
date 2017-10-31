@@ -46,7 +46,7 @@
 
 										<!-- // need to get coauthor portion of path -->
 										<div class="typology-author-links">
-											<?php echo statorec_get_author_links( get_the_coauthor_meta('ID') );
+											<?php echo statorec_get_coauthor_links( get_the_coauthor_meta('ID') );
 												d(get_the_coauthor_meta('ID'));
 											?>
 										</div>
