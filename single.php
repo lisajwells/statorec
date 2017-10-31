@@ -47,10 +47,7 @@
 										<!-- // need to get coauthor portion of path -->
 										<div class="typology-author-links">
 											<?php $nice = $coauthor->user_nicename; ?>
-											<?php echo statorec_get_coauthor_links( get_the_coauthor_meta('ID') ).$nice;
-											// d($author_id);
-											// 	d(get_the_coauthor_meta('ID'));
-												d($nice);
+											<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>';
 											?>
 										</div>
 
