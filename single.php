@@ -32,10 +32,8 @@
 							<div class="section-content typology-author">
 
 								<div class="container">
-									<?php d($guest_author_thumbnail); ?>
 
 									<?php if (!is_null( $guest_author_thumbnail )) {
-										// echo 'its empty';
 										echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
 									} ?>
 
