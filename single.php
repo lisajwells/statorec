@@ -8,6 +8,7 @@
 		<div id="typology-cover" class="typology-cover <?php echo esc_attr($cover_class); ?>">
 			<?php get_template_part('template-parts/cover/cover-single'); ?>
 		</div>
+
 		<div class="typology-fake-bg">
 			<div class="typology-section">
 
@@ -23,17 +24,14 @@
 						if ( isset( $coauthor->type ) && 'guest-author' === $coauthor->type ) {
 						    // we have a guest author ?>
 
-							<!-- <?php d($coauthor); ?> -->
-
-							<?php $guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
-
 							<?php typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
 
 							<div class="section-content typology-author">
-
 								<div class="container">
 
 									<!-- // only display the gravatar if there is one -->
+									<?php $guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
+
 									<?php if (!is_null( $guest_author_thumbnail )) {
 										echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
 									} ?>
@@ -52,11 +50,9 @@
 											<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>'; ?>
 										</div>
 
-									</div>
-
-								</div>
-
-							</div>
+									</div> <!-- end col-lg-10 -->
+								</div> <!-- end container -->
+							</div> <!-- end section-content typology-author -->
 
 						<?php
 						} else {
@@ -64,13 +60,14 @@
 							// continue because we don't ever want to see the wp user as author
 							continue;
 						}
-					}
-				}
+					} // end foreach
+				} // end if function get_coauthors
 				?>
 
 				<?php comments_template(); ?>
 
-			</div>
+			</div> <!-- end typology section -->
+		</div> <!-- end typology fake bg -->
 
 		<?php get_template_part('template-parts/single/related'); ?>
 
