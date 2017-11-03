@@ -28,3 +28,18 @@
     font-family: 'Domine', serif;
     text-transform: none;
 }
+
+.purchase-box {
+  color: #888888;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.purchase-box a {
+    border-bottom: none;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 10px 3px 10px;
+    width: 100px;
+}
