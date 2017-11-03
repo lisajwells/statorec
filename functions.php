@@ -35,5 +35,8 @@ if (!function_exists('statorec_coauthor_get_author_links')):
     }
 endif;
 
+/* Allow shortcodes in widget areas */
+add_filter('widget_text', 'do_shortcode');
+
 
 ?>
