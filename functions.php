@@ -38,5 +38,12 @@ endif;
 /* Allow shortcodes in widget areas */
 add_filter('widget_text', 'do_shortcode');
 
+/* Create shortcode for copyright year */
+function year_shortcode() {
+  $year = date('Y');
+  return $year;
+}
+add_shortcode('year', 'year_shortcode');
+// Use [year] in your posts.
 
 ?>
