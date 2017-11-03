@@ -7,3 +7,24 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  typology
 */
+
+.typology-social-icons {
+    width: 115px;
+}
+
+@media (max-width: 620px) {
+  .typology-social-icons a {
+      width: 40px;
+  }
+}
+
+.typology-social-icons a {
+    border-radius: 50%;
+}
+
+/*style the byline that's in the content*/
+.entry-content h5:first-of-type {
+    color: #c62641;
+    font-family: 'Domine', serif;
+    text-transform: none;
+}
