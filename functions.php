@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'statorec_enqueue_styles' );
 
 
 /**
- * Get links for co-authors plus plugin, based on typology to get button
+ * Get links for co-authors plus plugin, based on typology, to get button
  *
  */
 
@@ -45,5 +45,8 @@ function year_shortcode() {
 }
 add_shortcode('year', 'year_shortcode');
 // Use [year] in your posts.
+
+
+
 
 ?>
