@@ -47,6 +47,42 @@ add_shortcode('year', 'year_shortcode');
 // Use [year] in your posts.
 
 
+/**
+ * Get post excerpt, but don't strip tags
+ *
+ * Copy of typology_get_excerpt
+ */
+
+if (!function_exists('statorec_get_excerpt')):
+    function statorec_get_excerpt($limit = 250)
+    {
+
+        $manual_excerpt = false;
+
+        if (has_excerpt()) {
+            $content = get_the_excerpt();
+            $manual_excerpt = true;
+        } else {
+            $text = get_the_content('');
+            $text = strip_shortcodes($text);
+            $text = apply_filters('the_content', $text);
+            $content = str_replace(']]>', ']]&gt;', $text);
+        }
+
+        if (!empty($content)) {
+            if (!empty($limit) || !$manual_excerpt) {
+                $more = typology_get_option('more_string');
+                // $content = wp_strip_all_tags($content);
+                $content = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $content);
+                $content = typology_trim_chars($content, $limit, $more);
+            }
+            return wp_kses_post(wpautop($content));
+        }
+
+        return '';
+
+    }
+endif;
 
 
 ?>
