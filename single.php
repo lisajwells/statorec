@@ -16,6 +16,7 @@
 
 				<?php get_template_part('template-parts/single/guest-author'); ?>
 
+
 				<?php comments_template(); ?>
 
 			</div> <!-- end typology section -->
