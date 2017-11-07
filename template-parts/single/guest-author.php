@@ -1,12 +1,10 @@
+<?php d($coauthors_plus); ?>
 <?php if( typology_get_option( 'single_author' ) ): ?>
-
-	<?php //typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
 
 		<?php
 		if ( function_exists( 'get_coauthors' ) ) {
 
 	        $coauthors = get_coauthors();
-	        // d($coauthors);
 
 					foreach ( $coauthors as $coauthor ) {
 
