@@ -1,4 +1,10 @@
-<?php d($coauthors_plus); ?>
+<?php
+	global $coauthors_plus;
+
+d($coauthors_plus);
+
+	?>
+
 <?php if( typology_get_option( 'single_author' ) ): ?>
 
 		<?php
@@ -6,22 +12,28 @@
 
 	        $coauthors = get_coauthors();
 
+						d($coauthors);
 					foreach ( $coauthors as $coauthor ) {
+						d($coauthor);
 
 						if ( isset( $coauthor->type ) && 'guest-author' === $coauthor->type ) {
 						    // we have a guest author ?>
-
 							<?php typology_section_heading( array( 'title' => __typology('about_author') ) ); ?>
 
-							<div class="section-content typology-author">
-								<div class="container">
+								<div class="section-content typology-author">
+									<div class="container">
 
-									<!-- // only display the gravatar if there is one -->
-									<?php //$guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
 
-									<?php if (!is_null( $guest_author_thumbnail )) {
-										echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
-									} ?>
+										the_field: <?php the_field('facebook', $coauthor->ID) ?>
+										<br>
+										get_field: <?php echo get_field('facebook', $coauthor->ID) ?>
+
+										<!-- // only display the gravatar if there is one -->
+										<?php $guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
+
+										<?php if (!is_null( $guest_author_thumbnail )) {
+											echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
+										} ?>
 
 									<div class="col-lg-10">
 
