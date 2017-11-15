@@ -36,13 +36,7 @@
 								<!-- // the red button -->
 								<div class="typology-author-links">
 
-<!-- 								$value = get_field( "text_field" );
-									if( $value ) {
-									    echo $value;
-									} else {
-									    echo 'empty';
-									}
- -->								<?php
+								<?php
  									$nice = $coauthor->user_nicename;
  									// can include author's name in button
 									//$display_name = $coauthor->display_name;
@@ -59,11 +53,6 @@
 									<?php echo '</div>'; ?>
 
 								</div>
-
-								<!-- typology social button classes: typology-icon-social hover-on fa fa-facebook -->
-								<!-- <a href="https://www.facebook.com/lisa.wells.351" target="_blank" class="typology-icon-social hover-on fa fa-facebook"></a> -->
-								<!-- typology social button classes: typology-icon-social hover-on fa fa-twitter -->
-								<!-- typology social button classes: typology-icon-social hover-on fa fa-instagram -->
 
 							</div> <!-- end col-lg-10 -->
 						</div> <!-- end container -->
