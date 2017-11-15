@@ -16,7 +16,7 @@
 
 				<?php get_template_part('template-parts/single/content'); ?>
 
-		        <?php d($coauthors_plus); ?>
+		        <?php //d($coauthors_plus); ?>
 				<?php get_template_part('template-parts/single/guest-author'); ?>
 
 				<?php comments_template(); ?>

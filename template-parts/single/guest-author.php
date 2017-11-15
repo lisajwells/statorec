@@ -1,9 +1,7 @@
 <?php
 	global $coauthors_plus;
-
-d($coauthors_plus);
-
-	?>
+	// d($coauthors_plus);
+?>
 
 <?php if( typology_get_option( 'single_author' ) ): ?>
 
@@ -12,9 +10,9 @@ d($coauthors_plus);
 
 	        $coauthors = get_coauthors();
 
-						d($coauthors);
+						// d($coauthors);
 					foreach ( $coauthors as $coauthor ) {
-						d($coauthor);
+						// d($coauthor);
 
 						if ( isset( $coauthor->type ) && 'guest-author' === $coauthor->type ) {
 						    // we have a guest author ?>
@@ -24,10 +22,10 @@ d($coauthors_plus);
 									<div class="container">
 
 
-										the_field: <?php the_field('facebook', $coauthor->ID) ?>
+<!-- 										the_field: <?php the_field('facebook', $coauthor->ID) ?>
 										<br>
 										get_field: <?php echo get_field('facebook', $coauthor->ID) ?>
-
+ -->
 										<!-- // only display the gravatar if there is one -->
 										<?php $guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
 
