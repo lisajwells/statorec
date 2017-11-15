@@ -43,28 +43,25 @@
 									    echo 'empty';
 									}
  -->								<?php
-
+ 									// can include author's name in button
+									//$display_name = $coauthor->display_name;
 									$coauthor_facebook = get_field( "guest_author_facebook", $coauthor->ID );
 									$coauthor_twitter = get_field( "guest_author_twitter", $coauthor->ID );
 									$coauthor_instagram = get_field( "guest_author_instagram", $coauthor->ID );
-									d($coauthor_facebook);
-									d($coauthor_twitter);
-									d($coauthor_instagram);
-
 									?>
- 									<!-- can include author's name in button -->
-									<!-- <?php //$display_name = $coauthor->display_name; ?>-->
+
 									<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>'; ?>
 									<!-- <?php //echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All by '.$display_name.'</a></div>'; ?> -->
+
+									<?php if( $coauthor_facebook ) { echo $coauthor_facebook; } ?>
+									<?php if( $coauthor_twitter ) { echo $coauthor_twitter; } ?>
+									<?php if( $coauthor_instagram ) { echo $coauthor_instagram; } ?>
+
 								</div>
 
 								<!-- typology social button classes: typology-icon-social hover-on fa fa-facebook -->
 								<!-- typology social button classes: typology-icon-social hover-on fa fa-twitter -->
-								<!-- 										the_field: <?php the_field('facebook', $coauthor->ID) ?>
-								<br>
-								get_field: <?php echo get_field('facebook', $coauthor->ID) ?>
-	-->
-
+								<!-- typology social button classes: typology-icon-social hover-on fa fa-instagram -->
 
 							</div> <!-- end col-lg-10 -->
 						</div> <!-- end container -->
