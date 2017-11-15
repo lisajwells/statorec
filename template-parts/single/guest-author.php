@@ -35,7 +35,24 @@
 
 								<!-- // the red button -->
 								<div class="typology-author-links">
-									<!-- can include author's name in button -->
+
+<!-- 								$value = get_field( "text_field" );
+									if( $value ) {
+									    echo $value;
+									} else {
+									    echo 'empty';
+									}
+ -->								<?php
+
+									$coauthor_facebook = get_field( "guest_author_facebook", $coauthor->ID );
+									$coauthor_twitter = get_field( "guest_author_twitter", $coauthor->ID );
+									$coauthor_instagram = get_field( "guest_author_instagram", $coauthor->ID );
+									d($coauthor_facebook);
+									d($coauthor_twitter);
+									d($coauthor_instagram);
+
+									?>
+ 									<!-- can include author's name in button -->
 									<!-- <?php //$display_name = $coauthor->display_name; ?>-->
 									<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>'; ?>
 									<!-- <?php //echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All by '.$display_name.'</a></div>'; ?> -->
