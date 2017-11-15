@@ -52,10 +52,11 @@
 									?>
 
 									<!-- <?php //echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All by '.$display_name.'</a></div>'; ?> -->
-									<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a></div>'; ?>
+									<?php echo '<div><a class="typology-button-social hover-on" href="/author/'.$nice.'">View All</a>'; ?>
 									<?php if( $coauthor_facebook ) { echo '<a href="'.$coauthor_facebook.'" target="_blank" class="typology-icon-social hover-on fa fa-facebook"></a>'; } ?>
 									<?php if( $coauthor_twitter ) { echo '<a href="'.$coauthor_twitter.'" target="_blank" class="typology-icon-social hover-on fa fa-twitter"></a>'; } ?>
 									<?php if( $coauthor_instagram ) { echo '<a href="'.$coauthor_instagram.'" target="_blank" class="typology-icon-social hover-on fa fa-instagram"></a>'; } ?>
+									<?php echo '</div>'; ?>
 
 								</div>
 
