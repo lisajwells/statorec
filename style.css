@@ -22,6 +22,12 @@
     border-radius: 50%;
 }
 
+h3 {
+    color: #c62641;
+    font-size: 1.9rem;
+    /*text-transform: none;*/
+}
+
 /*style the byline that's in the content*/
 .entry-content h5:first-of-type {
     color: #c62641;
