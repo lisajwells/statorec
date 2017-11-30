@@ -56,3 +56,7 @@ h3 {
 .home .section-head {
     margin-bottom: 8rem;
 }
+
+.poem-small p {
+  font-size: 1.4rem;
+}
