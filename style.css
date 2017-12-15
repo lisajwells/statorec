@@ -17,14 +17,23 @@
 }
 
 .typology-icon-social {
+  background-color: #fff;
+  margin: 14px 11px 0 0 !important;
   -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
           transform: translateY(1px);
 }
 
 .typology-button-social {
-    width: auto;
-    display: table;
+    width: -webkit-max-content;
+    width:    -moz-max-content;
+    width:         max-content;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    line-height: 15px;
 }
 
 .coauthor-website {
