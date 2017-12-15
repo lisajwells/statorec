@@ -25,7 +25,6 @@
 							} ?>
 
 							<div class="col-lg-10">
- 								<?php $website = $coauthor->website; ?>
 
 								<?php echo '<h5 class="typology-author-box-title">'.coauthors_posts_links_single( $coauthor ).'</h5>'; ?>
 								<?php echo '<h5 class="typology-author-box-title">'.$website.'</h5>'; ?>
@@ -40,6 +39,7 @@
 
 								<?php
  									$nice = $coauthor->user_nicename;
+ 								    $website = $coauthor->website;
  									// can include author's name in button
 									//$display_name = $coauthor->display_name;
 									$coauthor_facebook = get_field( "guest_author_facebook", $coauthor->ID );
@@ -52,6 +52,10 @@
 									<?php if( $coauthor_facebook ) { echo '<a href="'.$coauthor_facebook.'" target="_blank" class="typology-icon-social hover-on fa fa-facebook"></a>'; } ?>
 									<?php if( $coauthor_twitter ) { echo '<a href="'.$coauthor_twitter.'" target="_blank" class="typology-icon-social hover-on fa fa-twitter"></a>'; } ?>
 									<?php if( $coauthor_instagram ) { echo '<a href="'.$coauthor_instagram.'" target="_blank" class="typology-icon-social hover-on fa fa-instagram"></a>'; } ?>
+									<?php if( $website ) {
+										echo 'website';
+									} ?>
+									<!-- .typology-icon-social -->
 									<?php echo '</div>'; ?>
 
 								</div>
