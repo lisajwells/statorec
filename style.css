@@ -22,18 +22,22 @@
   -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
           transform: translateY(1px);
+  width: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .typology-button-social {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: center;
+    line-height: 15px;
+    vertical-align: center;
     width: -webkit-max-content;
     width:    -moz-max-content;
     width:         max-content;
-    vertical-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 40px;
-    line-height: 15px;
 }
 
 .coauthor-website {
@@ -51,7 +55,11 @@
   .typology-author-links {
       text-align: left;
   }
+  .typology-author .typology-button-social {
+      margin-bottom: 0;
+  }
 }
+
 
 h3 {
     color: #c62641;
