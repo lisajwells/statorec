@@ -1,10 +1,9 @@
 <?php
 	global $coauthors_plus;
-?>
 
-<?php if( typology_get_option( 'single_author' ) ): ?>
 
-	<?php
+  if( typology_get_option( 'single_author' ) ):
+
 	if ( function_exists( 'get_coauthors' ) ) {
 
         $coauthors = get_coauthors();
@@ -26,8 +25,11 @@
 							} ?>
 
 							<div class="col-lg-10">
+ 								<?php $website = $coauthor->website; ?>
 
 								<?php echo '<h5 class="typology-author-box-title">'.coauthors_posts_links_single( $coauthor ).'</h5>'; ?>
+								<?php echo '<h5 class="typology-author-box-title">'.$website.'</h5>'; ?>
+								<?php d($website); ?>
 
 								<div class="typology-author-desc">
 									<?php echo wpautop( $coauthor->description ); ?>
