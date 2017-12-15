@@ -22,6 +22,16 @@
     border-radius: 50%;
 }
 
+.fa {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.coauthor-website {
+  width: auto;
+}
+
 h3 {
     color: #c62641;
     font-size: 1.9rem;
