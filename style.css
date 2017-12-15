@@ -12,17 +12,11 @@
     width: 115px;
 }
 
-@media (max-width: 620px) {
-  .typology-social-icons a {
-      width: 40px;
-  }
-}
-
 .typology-social-icons a {
     border-radius: 50%;
 }
 
-.fa {
+.typology-icon-social {
   -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
           transform: translateY(1px);
@@ -32,10 +26,18 @@
   width: auto;
 }
 
+@media (max-width: 620px) {
+  .typology-social-icons a {
+      width: 40px;
+  }
+}
+
+/*override typology centering for mobile*/
 @media (max-width: 680px) {
-.typology-author-links {
-    text-align: left;
-}}
+  .typology-author-links {
+      text-align: left;
+  }
+}
 
 h3 {
     color: #c62641;
