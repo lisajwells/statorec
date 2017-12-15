@@ -22,6 +22,11 @@
           transform: translateY(1px);
 }
 
+.typology-button-social {
+    width: auto;
+    display: table;
+}
+
 .coauthor-website {
   width: auto;
 }
