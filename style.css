@@ -35,9 +35,9 @@
     justify-content: center;
     line-height: 15px;
     vertical-align: center;
-    width: -webkit-max-content;
-    width:    -moz-max-content;
-    width:         max-content;
+    width: -webkit-max-content !important;
+    width:    -moz-max-content !important;
+    width:         max-content !important;
 }
 
 .coauthor-website {
