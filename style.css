@@ -32,6 +32,11 @@
   width: auto;
 }
 
+@media (max-width: 680px) {
+.typology-author-links {
+    text-align: left;
+}}
+
 h3 {
     color: #c62641;
     font-size: 1.9rem;
