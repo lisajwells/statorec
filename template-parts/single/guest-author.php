@@ -73,7 +73,6 @@
 				}
 			} // end foreach
 
-
 	    } // end if function get_coauthors
 		?>
 <?php endif; ?>
