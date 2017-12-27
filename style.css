@@ -21,6 +21,11 @@ h3 {
     text-transform: none;
 }
 
+/*so any subhed can lose its margin-bottom*/
+.no-space-after {
+  margin-bottom: 0 !important;
+}
+
 .section-head {
     margin-bottom: 5rem;
 }
@@ -82,6 +87,12 @@ h3 {
     width: 100px;
 }
 
+/*so poetry can appear to take on an indented shape*/
+.white-text {
+  color: white !important;
+}
+
+/*so poetry can have a smaller font-size for fitting*/
 .poem-small p {
   font-size: 1.4rem;
 }
