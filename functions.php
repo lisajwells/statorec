@@ -143,7 +143,22 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'classes' => 'footnote',
         ),
         array(
-            'title' => 'Heading 6 no space after',
+            'title' => 'Heading 3 no-space-after',
+            'block' => 'h3',
+            'classes' => 'no-space-after',
+        ),
+        array(
+            'title' => 'Heading 4 no-space-after',
+            'block' => 'h4',
+            'classes' => 'no-space-after',
+        ),
+        array(
+            'title' => 'Heading 5 no-space-after',
+            'block' => 'h5',
+            'classes' => 'no-space-after',
+        ),
+        array(
+            'title' => 'Heading 6 no-space-after',
             'block' => 'h6',
             'classes' => 'no-space-after',
         ),
