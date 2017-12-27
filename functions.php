@@ -13,7 +13,10 @@ function statorec_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'statorec_enqueue_styles' );
 
-
+function statorec_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'init', 'statorec_add_editor_styles' );
 
 /**
  * Get links for co-authors plus plugin, based on typology, to get button

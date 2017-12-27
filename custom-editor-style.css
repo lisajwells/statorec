@@ -1,0 +1,21 @@
+/*style the byline that's in the content*/
+.entry-content h5:first-of-type,
+.byline {
+    color: #c62641;
+    font-family: 'Domine', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: none;
+}
+
+/*so poetry can have a smaller font-size for fitting*/
+.poem-small p,
+.footnote {
+  font-size: 1.4rem;
+}
+
+/*so any subhed can lose its margin-bottom*/
+.no-space-after {
+  margin-bottom: 0 !important;
+}
+
