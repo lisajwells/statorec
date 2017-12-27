@@ -19,6 +19,8 @@ h3 {
 .byline {
     color: #c62641;
     font-family: 'Domine', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
     text-transform: none;
 }
 
