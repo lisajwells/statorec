@@ -123,7 +123,11 @@ function my_mce_before_init_insert_formats( $init_array ) {
             'title' => 'Footnote',
             'block' => 'p',
             'classes' => 'footnote',
-            // 'wrapper' => true,
+        ),
+        array(
+            'title' => 'Heading 6 no space after',
+            'block' => 'h6',
+            'classes' => 'no-space-after',
         ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
