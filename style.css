@@ -8,6 +8,28 @@
  Text Domain:  typology
 */
 
+h3 {
+    color: #c62641;
+    font-size: 1.9rem;
+    /*text-transform: none;*/
+}
+
+/*style the byline that's in the content*/
+.entry-content h5:first-of-type {
+    color: #c62641;
+    font-family: 'Domine', serif;
+    text-transform: none;
+}
+
+.section-head {
+    margin-bottom: 5rem;
+}
+
+.home .section-head { /* the latest */
+    margin-bottom: 8rem;
+}
+
+/*Social Icons*/
 .typology-social-icons {
     width: 115px;
 }
@@ -40,8 +62,28 @@
     width:         max-content !important;
 }
 
+/*Co-Authors aka Guest Authors*/
 .coauthor-website {
   width: auto;
+}
+
+.purchase-box {
+    color: #888888;
+    font-size: 13px;
+    font-size: 1.3rem;
+}
+
+.purchase-box a {
+    border-bottom: none;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding: 0 10px 3px 10px;
+    width: 100px;
+}
+
+.poem-small p {
+  font-size: 1.4rem;
 }
 
 @media (max-width: 620px) {
@@ -60,41 +102,3 @@
   }
 }
 
-h3 {
-    color: #c62641;
-    font-size: 1.9rem;
-    /*text-transform: none;*/
-}
-
-/*style the byline that's in the content*/
-.entry-content h5:first-of-type {
-    color: #c62641;
-    font-family: 'Domine', serif;
-    text-transform: none;
-}
-
-.purchase-box {
-    color: #888888;
-    font-size: 13px;
-    font-size: 1.3rem;
-}
-
-.purchase-box a {
-    border-bottom: none;
-    height: 30px;
-    line-height: 30px;
-    margin: 10px 0;
-    padding: 0 10px 3px 10px;
-    width: 100px;
-}
-
-.section-head {
-    margin-bottom: 5rem;
-}
-.home .section-head {
-    margin-bottom: 8rem;
-}
-
-.poem-small p {
-  font-size: 1.4rem;
-}
