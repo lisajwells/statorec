@@ -21,7 +21,7 @@
 							<?php $guest_author_thumbnail = $coauthors_plus->guest_authors->get_guest_author_thumbnail( $coauthor, $size ); ?>
 
 							<?php if (!is_null( $guest_author_thumbnail )) {
-								echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 100 ).'</div>';
+								echo '<div class="col-lg-2">'.coauthors_get_avatar( $coauthor, 96 ).'</div>';
 							} ?>
 
 							<div class="col-lg-10">
