@@ -87,12 +87,30 @@ if (!function_exists('statorec_get_excerpt')):
     }
 endif;
 
+// add superscript button to tinymce
+// function my_mce_buttons_2($buttons) {
+    /**
+     * Add in a core button that's disabled by default
+     */
+//     $buttons[] = 'sup';
+//     $buttons[] = 'sub';
+
+//     return $buttons;
+// }
+// add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
 /**
  * Add Formats menu to tinymce for custom styles
  */
 // http://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
 function statorec_mce_buttons_2($buttons) {
     array_unshift($buttons, 'styleselect');
+        /**
+     * Add in a core button that's disabled by default
+     */
+    $buttons[] = 'superscript';
+    $buttons[] = 'subscript';
+
     return $buttons;
 }
 add_filter('mce_buttons_2', 'statorec_mce_buttons_2');
