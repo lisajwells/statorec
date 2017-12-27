@@ -84,5 +84,14 @@ if (!function_exists('statorec_get_excerpt')):
     }
 endif;
 
+/**
+ * Add Formats menu to tinymce for custom styles
+ */
+// http://www.wpbeginner.com/wp-tutorials/how-to-add-custom-styles-to-wordpress-visual-editor/
+function statorec_mce_buttons_2($buttons) {
+    array_unshift($buttons, 'styleselect');
+    return $buttons;
+}
+add_filter('mce_buttons_2', 'statorec_mce_buttons_2');
 
 ?>
